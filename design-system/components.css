@@ -204,6 +204,8 @@ a.cell:hover, .cell--hover:hover { background: var(--tb-forest); }
 @media (max-width: 860px) {
   .split { grid-template-columns: 1fr; }
   .timeline { grid-template-columns: 1fr 1fr; row-gap: 1.6rem; } .timeline::before { display: none; }
-  .frame::after { inset: 10px -8px -10px 8px; }
+  .frame::after { inset: 10px 0 -10px 10px; }          /* não vaza para fora da tela */
+  .frame--l::after { inset: 10px 10px -10px 0; }
+  .frame { margin-bottom: 12px; }
 }
 @media (max-width: 480px) { .timeline { grid-template-columns: 1fr; } }

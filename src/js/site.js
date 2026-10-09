@@ -97,5 +97,17 @@
     rail.addEventListener('click', (e) => { if (moved) { e.preventDefault(); moved = false; } }, true);
   }
 
+  // ---------- Mapa sob demanda (o iframe do Google pesa >1 MB) ----------
+  const mapBtn = document.querySelector('.map-load');
+  if (mapBtn) {
+    const box = mapBtn.parentElement;
+    const load = () => {
+      const f = document.createElement('iframe');
+      f.title = 'Mapa do consultório em Mococa'; f.referrerPolicy = 'no-referrer-when-downgrade'; f.src = box.dataset.map;
+      box.replaceChildren(f);
+    };
+    mapBtn.addEventListener('click', load);
+  }
+
   const yr = document.getElementById('yr'); if (yr) yr.textContent = new Date().getFullYear();
 })();
