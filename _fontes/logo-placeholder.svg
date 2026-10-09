@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Thiago Benevides">
+  <!-- PLACEHOLDER do monograma TB (dourado). Substituir pelo logo original em vetor quando enviado. -->
+  <rect x="4" y="4" width="112" height="112" rx="2" fill="none" stroke="#C9A24D" stroke-width="3"/>
+  <rect x="12" y="12" width="96" height="96" rx="1" fill="none" stroke="#C9A24D" stroke-width="1"/>
+  <text x="60" y="78" text-anchor="middle" font-family="'Playfair Display',Georgia,serif" font-size="60" font-weight="600" fill="#C9A24D" letter-spacing="-4">TB</text>
+</svg>

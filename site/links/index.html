@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thiago Benevides | Links</title>
+<meta name="description" content="Agende sua consulta com o Thiago Benevides, biomédico e nutricionista. Mococa e Ribeirão Preto, presencial e online.">
+<meta name="theme-color" content="#163626">
+<meta property="og:title" content="Thiago Benevides | Biomédico e Nutricionista">
+<meta property="og:description" content="Agende sua consulta. Mococa e Ribeirão Preto, presencial e online.">
+<meta property="og:image" content="/assets/img/post-objetivo-unico.jpg">
+<link rel="icon" type="image/png" href="/assets/img/favicon.png">
+<link rel="apple-touch-icon" href="/assets/img/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Montserrat:wght@300;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/tokens.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+<style>
+  body { background: var(--tb-forest); color: var(--tb-ivory); min-height: 100svh; }
+  .bio { min-height: 100svh; display: grid; place-items: center; padding: clamp(1.2rem, 4svh, 2.5rem) var(--gutter); position: relative; overflow: hidden; }
+  .bio::before { content: ""; position: absolute; left: 50%; top: -10%; width: 120vw; max-width: 900px; aspect-ratio: 1; transform: translateX(-50%); background: radial-gradient(closest-side, rgba(218,182,118,.18), transparent); pointer-events: none; }
+  .bio::after { content: ""; position: absolute; inset: 0; background-image: linear-gradient(90deg, rgba(251,248,243,.05) 1px, transparent 1px); background-size: calc(100% / 6) 100%; pointer-events: none; }
+  .bio__card { position: relative; z-index: 1; width: min(100%, 440px); display: grid; gap: clamp(.9rem, 2.6svh, 1.5rem); justify-items: center; text-align: center; }
+  .bio__avatar { width: clamp(88px, 15svh, 120px); aspect-ratio: 1; border-radius: 50%; object-fit: cover; border: 2px solid var(--tb-gold); padding: 4px; background: var(--tb-forest); }
+  .bio h1 { font-family: var(--font-brand); font-weight: 700; font-size: clamp(1.4rem, 3.6svh, 1.8rem); letter-spacing: -.01em; color: var(--tb-ivory); line-height: 1.1; }
+  .bio h1 span { font-weight: 300; }
+  .bio__role { font-size: .74rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--tb-gold); margin-top: .35rem; }
+  .bio__tag { font-family: var(--font-display); font-size: clamp(1.35rem, 3.4svh, 1.7rem); line-height: 1.15; color: var(--tb-ivory); max-width: 22ch; }
+  .bio__tag em { color: var(--tb-gold); }
+  .links { list-style: none; display: grid; gap: .7rem; width: 100%; margin-top: .4rem; }
+  .link { display: grid; grid-template-columns: 40px 1fr auto; gap: 1rem; align-items: center; text-align: left; padding: clamp(.8rem, 2.2svh, 1.05rem) 1.1rem; border: 1px solid rgba(218,182,118,.4); border-radius: var(--r-btn); background: rgba(251,248,243,.04); color: var(--tb-ivory); position: relative; overflow: hidden; isolation: isolate; transition: transform .45s var(--ease-out), background .35s, border-color .35s, color .35s; }
+  .link::after { content: ""; position: absolute; inset: 0; z-index: -1; transform: translateX(-120%) skewX(-18deg); background: linear-gradient(90deg, transparent, rgba(255,255,255,.14), transparent); transition: transform .9s var(--ease-out); }
+  .link:hover::after { transform: translateX(120%) skewX(-18deg); }
+  .link:hover { transform: translateY(-3px); border-color: var(--tb-gold); background: rgba(251,248,243,.09); }
+  .link svg { width: 24px; height: 24px; stroke: var(--tb-gold); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; justify-self: center; }
+  .link b { display: block; font-size: .8rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; line-height: 1.2; }
+  .link small { display: block; font-size: .78rem; font-weight: 500; color: var(--tb-mute-dark); margin-top: .15rem; letter-spacing: 0; text-transform: none; }
+  .link .arrow { color: var(--tb-gold); font-size: 1.1rem; transition: transform .4s var(--ease-out); }
+  .link:hover .arrow { transform: translateX(5px); }
+  .link--main { background: var(--tb-gold); color: var(--tb-forest); border-color: var(--tb-gold); }
+  .link--main svg { stroke: var(--tb-forest); } .link--main small { color: rgba(22,54,38,.75); } .link--main .arrow { color: var(--tb-forest); }
+  .link--main:hover { background: var(--tb-ivory); border-color: var(--tb-ivory); box-shadow: var(--sh-glow); }
+  .bio__foot { font-size: .72rem; color: var(--tb-mute-dark); letter-spacing: .04em; }
+  .reveal { transition-duration: .9s; }
+</style>
+</head>
+<body>
+<main class="bio">
+  <div class="bio__card">
+    <img class="bio__avatar reveal" src="/assets/img/perfil.jpg" alt="Thiago Benevides" width="120" height="120">
+    <div class="reveal" style="--i:1"><h1>Thiago<span>Benevides</span></h1><div class="bio__role">Biomédico e Nutricionista</div></div>
+    <p class="bio__tag reveal" style="--i:2">Seu objetivo é único. A estratégia <em>também precisa ser.</em></p>
+    <ul class="links" data-stagger>
+      <li><a class="link link--main" href="https://wa.me/5519991046731?text=Ol%C3%A1%2C%20Thiago!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><rect x="3" y="4.500" width="18" height="16" rx="1"/><path d="M3 9.500h18M8 3v3M16 3v3"/></svg><span><b>Agendamento de consulta</b><small>Pelo WhatsApp · presencial ou online</small></span><span class="arrow">→</span></a></li>
+      <li><a class="link" href="https://www.instagram.com/nutrithiagobenevides/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><rect x="3.500" y="3.500" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.300" cy="6.700" r=".6"/></svg><span><b>Instagram</b><small>@nutrithiagobenevides</small></span><span class="arrow">→</span></a></li>
+      <li><a class="link" href="https://www.google.com/maps/search/?api=1&query=R.+Riachuelo%2C+743+Mococa+SP" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.200-7-11a7 7 0 0 1 14 0c0 4.800-7 11-7 11z"/><circle cx="12" cy="10" r="2.500"/></svg><span><b>Como chegar</b><small>R. Riachuelo, 743 · Centro · Mococa/SP</small></span><span class="arrow">→</span></a></li>
+      <li><a class="link" href="/"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.200 3 14.800 0 18M12 3c-3 3.200-3 14.800 0 18"/></svg><span><b>Conheça o site</b><small>Especialidades, avaliação corporal e dúvidas</small></span><span class="arrow">→</span></a></li>
+    </ul>
+    <p class="bio__foot reveal" style="--i:6">Mococa e Ribeirão Preto · Presencial e online</p>
+  </div>
+</main>
+<script src="/assets/js/motion.js" defer></script>
+</body>
+</html>

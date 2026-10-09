@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pt-BR" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proposta | Site Thiago Benevides</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#163626">
+<link rel="icon" type="image/png" href="/assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Montserrat:wght@300;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/tokens.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+<link rel="stylesheet" href="/assets/css/site.css">
+<style>
+  .planos { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--sp-6); align-items: start; }
+  .plano { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-md); padding: var(--sp-7) var(--sp-6); display: grid; gap: var(--sp-4); box-shadow: var(--sh-1); }
+  .plano--destaque { border-color: var(--tb-gold); box-shadow: var(--sh-2); }
+  .plano__tag { width: fit-content; }
+  .plano h2 { font-size: 1.9rem; }
+  .plano__preco { font-family: var(--font-display); font-size: 3.4rem; line-height: 1; color: var(--text); font-weight: 400; }
+  .plano__preco small { font-family: var(--font-body); font-size: 1rem; color: var(--text-muted); margin-right: .3rem; }
+  .check { list-style: none; display: grid; gap: .85rem; }
+  .check li { display: grid; grid-template-columns: 16px 1fr; gap: .8rem; font-size: .95rem; color: var(--text-muted); line-height: 1.55; }
+  .check li::before { content: ""; width: 14px; height: 14px; margin-top: .3rem; border-radius: 4px; background: var(--tb-mist); border: 1.5px solid var(--tb-gold); }
+  .check--done li::before { background: var(--tb-gold); }
+  .bonus { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--sp-5); }
+  .bonus > div { padding-top: var(--sp-4); border-top: 1px solid var(--line-gold); display: grid; gap: .4rem; align-content: start; }
+  .bonus b { font-family: var(--font-display); font-size: 1.3rem; font-weight: 500; }
+  .bonus span { font-size: var(--fs-small); color: var(--text-muted); }
+  .combinados { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-5); }
+  .page-hero { padding: calc(var(--nav-h) + var(--sp-9)) 0 var(--sp-9); background: var(--surface-dark); color: var(--tb-ivory); position: relative; overflow: hidden; }
+  .page-hero::before { content: ""; position: absolute; right: -10%; top: -30%; width: 60vw; height: 60vw; background: radial-gradient(closest-side, rgba(218,182,118,.2), transparent); pointer-events: none; }
+  .page-hero .container { position: relative; display: grid; gap: var(--sp-5); }
+  .page-hero p { color: var(--tb-mute-dark); }
+  .page-hero .eyebrow { color: var(--tb-gold); } .page-hero h1 em { color: var(--tb-gold); }
+    .swatches { display: flex; gap: .5rem; flex-wrap: wrap; }
+  .swatches i { width: 52px; height: 52px; border-radius: 50%; border: 1px solid var(--line); display: block; }
+  .swatches i.grad { background: linear-gradient(135deg, #8C6D2D, #D4B865 55%, #FADA83); }
+  .hex { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .8rem; color: var(--text); }
+  .cta-band { display: grid; gap: var(--sp-5); justify-items: start; }
+  @media (max-width: 860px) { .planos, .combinados { grid-template-columns: 1fr; } .bonus { grid-template-columns: repeat(2, 1fr); }  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="nav__logo" href="/" aria-label="Thiago Benevides"><img src="/assets/img/logo-mark-gold-640.png" alt="" width="32" height="44"><span class="brand-word">Thiago<span>Benevides</span><small>Biomédico e Nutricionista</small></span></a>
+    <nav class="nav__menu" style="display:flex"><a class="nav__link" href="/">Ver o site →</a></nav>
+  </div>
+</header>
+
+<main>
+<section class="page-hero">
+  <div class="container" data-stagger>
+    <span class="eyebrow">Proposta</span>
+    <h1>O que está incluído <em>no seu site</em></h1>
+    <p class="lead" style="max-width:56ch">Tudo o que entra na implantação completa, do design ao suporte pós-entrega.</p>
+  </div>
+</section>
+
+<section class="section"><div class="container">
+  <div class="planos">
+    <article class="plano plano--destaque reveal">
+      <span class="tag plano__tag">Plano completo</span>
+      <h2>Site + implantação</h2>
+      <div class="plano__preco"><small>R$</small>1.200</div>
+      <ul class="check">
+        <li>Site completo do Thiago Benevides no ar e responsivo: início, sobre, atendimentos (nutrição, avaliações e estética), como funciona a consulta, vídeos com player próprio, Instagram, avaliações, contato com mapa e botão de WhatsApp</li>
+        <li>Design system exclusivo da marca: cores, tipografia, componentes e animações, tirados da identidade real do Instagram e do logo</li>
+        <li>Fotos, vídeos e textos reais do Instagram, do Linktree e do Google, tratados para carregar rápido</li>
+        <li>Logo extraído e redesenhado em vetor (SVG) e em PNG transparente, nas versões dourada e verde</li>
+        <li>Ajuda na compra do domínio</li>
+        <li>Ajuda na contratação da hospedagem</li>
+        <li>Publicação do site no domínio e na hospedagem, feita 100% por nós (você não precisa mexer em nada técnico)</li>
+        <li>Suporte completo durante toda a implantação</li>
+        <li>30 dias de suporte após a entrega</li>
+        <li>Até 10 alterações no site dentro desse período</li>
+        <li>Pesquisa de palavras-chave básica, já aplicada nos textos do site</li>
+        <li>Teste de velocidade do site</li>
+      </ul>
+    </article>
+
+    <article class="plano reveal" style="--i:2">
+      <span class="tag tag--outline plano__tag">Opcional</span>
+      <h2>Pacote de SEO</h2>
+      <div class="plano__preco"><small>R$</small>300</div>
+      <ul class="check">
+        <li>Configuração do Google Search Console</li>
+        <li>Configuração do Google Analytics</li>
+        <li>Configuração do Microsoft Clarity (mapa de calor)</li>
+        <li>Criação do robots.txt</li>
+        <li>Criação do sitemap.xml</li>
+        <li>Otimização de meta tags (título, descrição e compartilhamento)</li>
+        <li>Demais ajustes técnicos para o site ser indexado corretamente no Google</li>
+      </ul>
+    </article>
+  </div>
+</div></section>
+
+<section class="section section--mist"><div class="container">
+  <div class="head"><span class="eyebrow">Versão inicial</span><h2>O que já está <em>pronto</em> nesta prévia</h2><p class="lead">Itens que você já pode ver e testar no site em desenvolvimento.</p></div>
+  <div class="planos" style="align-items:start">
+    <ul class="check check--done reveal">
+      <li>Página inicial responsiva (celular, tablet e computador) com menu mobile</li>
+      <li>Identidade aplicada: monograma TB, verde-floresta e dourado, tipografia serifada e foto em arco</li>
+      <li>6 vídeos do Instagram baixados, comprimidos e tocando em <b>player próprio</b>, sem embed de terceiros</li>
+      <li>Avaliações reais do Google em carrossel</li>
+    </ul>
+    <ul class="check check--done reveal" style="--i:2">
+      <li>Seções de atendimentos, como funciona a consulta, faixa de posts do Instagram e contato com mapa</li>
+      <li>Fotos reais do consultório, das avaliações e dos atendimentos, recortadas dos vídeos e dos posts do perfil</li>
+      <li>Botão flutuante e links de agendamento pelo WhatsApp</li>
+      <li>Dados do consultório estruturados para o Google (JSON-LD)</li>
+      <li>Animações de entrada suaves, que respeitam a opção "reduzir movimento" do aparelho</li>
+    </ul>
+  </div>
+</div></section>
+
+<section class="section"><div class="container">
+  <div class="head"><span class="eyebrow">Bônus</span><h2>Entregue junto, <em>sem custo extra</em></h2><p class="lead">Itens que valorizam o site e não são cobrados à parte.</p></div>
+  <div class="bonus" data-stagger>
+    <div><b>Segurança</b><span>HTTPS com renovação automática e cabeçalhos de segurança.</span></div>
+    <div><b>Imagens otimizadas</b><span>Fotos reduzidas e vídeos comprimidos para abrir rápido no celular.</span></div>
+    <div><b>LGPD</b><span>Aviso de cookies e política de privacidade.</span></div>
+    <div><b>Conversão no WhatsApp</b><span>Botões de agendamento em todas as seções.</span></div>
+  </div>
+</div></section>
+
+<section class="section section--mist"><div class="container">
+  <div class="head"><span class="eyebrow">Combinados</span><h2>Para ficar <em>tudo claro</em></h2></div>
+  <div class="combinados">
+    <div class="plano reveal"><h2 style="font-size:1.4rem">Fora do escopo</h2>
+      <ul class="check"><li>Criação de textos longos e de blog</li><li>Fotos e vídeos profissionais novos</li><li>Perfil da Empresa no Google (o mapa)</li><li>Posicionamento garantido nas buscas</li><li>Links de outros sites e anúncios pagos</li></ul></div>
+    <div class="plano reveal" style="--i:1"><h2 style="font-size:1.4rem">O que é uma alteração</h2>
+      <ul class="check"><li>Troca de texto, imagem, telefone ou cor = 1 alteração</li><li>Página nova ou funcionalidade nova = orçamento à parte</li></ul>
+      <h2 style="font-size:1.4rem;margin-top:.6rem">Domínio e contas</h2>
+      <ul class="check"><li>Domínio e hospedagem no nome do Thiago, com a gente como contato técnico</li><li>Contas do Search Console, Analytics e Clarity do Thiago, com a gente como administrador</li></ul></div>
+    <div class="plano reveal" style="--i:2"><h2 style="font-size:1.4rem">O que o Thiago envia</h2>
+      <ul class="check"><li>Logo original em vetor ou em alta resolução (o arquivo recebido tem 640 px; o vetor desta prévia foi redesenhado a partir dele)</li><li>Fotos e vídeos originais em alta qualidade (o Instagram público entrega só 360 a 720 px)</li><li>Autorização de uso de imagem de pacientes e de terceiros que aparecem nas fotos e vídeos</li><li>Antes e depois de pacientes, se quiser mostrar resultados, com consentimento por escrito</li><li>Número de registro profissional (CRN e CRBM) para o rodapé</li><li>Horário de atendimento e endereço de Ribeirão Preto, confirmados</li><li>Textos finais dos atendimentos, revisados por você</li></ul></div>
+  </div>
+  <p style="margin-top:32px;max-width:70ch;font-size:var(--fs-small)">Depois dos 30 dias, mensalidade opcional de manutenção: hospedagem gerenciada, backup, atualizações, ajustes mensais e acompanhamento do Search Console e do Analytics.</p>
+</div></section>
+
+<section class="section"><div class="container">
+  <div class="head"><span class="eyebrow">Identidade usada</span><h2>Cores <em>conferidas</em> no Instagram</h2><p class="lead">Medimos as cores nos posts públicos do perfil @nutrithiagobenevides e no logo para garantir que o site seja fiel à marca.</p></div>
+  <div class="combinados">
+    <div class="plano reveal"><h2 style="font-size:1.3rem">Verde-floresta da marca</h2><div class="swatches"><i style="background:#163626"></i><i style="background:#2A463A"></i></div><p style="font-size:var(--fs-small)"><span class="hex">#163626</span> é a cor chapada dos botões, numerais e painéis escuros dos posts (cerca de 52% dos pixels medidos). <span class="hex">#2A463A</span> é o fundo do logo.</p></div>
+    <div class="plano reveal" style="--i:1"><h2 style="font-size:1.3rem">Ouro do monograma</h2><div class="swatches"><i style="background:#DAB676"></i><i class="grad"></i></div><p style="font-size:var(--fs-small)"><span class="hex">#DAB676</span> é o dourado dos títulos dos posts. O monograma TB tem degradê de <span class="hex">#8C6D2D</span> a <span class="hex">#FADA83</span>, reproduzido no logo do site.</p></div>
+    <div class="plano reveal" style="--i:2"><h2 style="font-size:1.3rem">Creme e ambiente</h2><div class="swatches"><i style="background:#F6EEEA"></i><i style="background:#F6EFE8"></i><i style="background:#2E8275"></i></div><p style="font-size:var(--fs-small)"><span class="hex">#F6EEEA</span> é o creme dos cartões de texto dos posts (usado como <span class="hex">#F6EFE8</span> no fundo do site). <span class="hex">#2E8275</span> é o verde-petróleo da parede do consultório, que aparece nas fotos e fica de fora da paleta de interface.</p></div>
+  </div>
+  <p style="margin-top:24px;max-width:70ch;font-size:var(--fs-small)">Derivados, sem medição direta: verde médio <span class="hex">#2D5E45</span> (palavras em itálico e hover), verde-névoa <span class="hex">#E8ECE0</span> (seções alternadas) e dourado de texto <span class="hex">#7A6626</span> (contraste AA sobre creme).</p>
+</div></section>
+
+
+<section class="section"><div class="container">
+  <div class="head"><span class="eyebrow"><b>·</b>Tipografia</span><h2>Fontes <em>conferidas</em> nos posts e no logo</h2><p class="lead">Comparamos letra por letra os títulos, o texto corrido e a assinatura do logo com candidatas do Google Fonts e trocamos a escolha inicial (Playfair Display e Raleway), que não combinava com a rede social.</p></div>
+  <div class="combinados">
+    <div class="plano reveal"><h2 style="font-size:1.3rem">Títulos: Instrument Serif</h2><p style="font-size:var(--fs-small)">Os títulos dos posts ("A alimentação é uma das partes mais importantes...", "O lanche da escola também conta") têm serifa fechada, letras muito juntas e x-height alto. Instrument Serif reproduz isso; Playfair é mais larga e contrastada.</p></div>
+    <div class="plano reveal" style="--i:1"><h2 style="font-size:1.3rem">Texto: Quicksand</h2><p style="font-size:var(--fs-small)">O texto corrido e as legendas dos posts ("Não precisa ser complicado...", "para quem busca:") usam uma sans arredondada de traço uniforme. Quicksand é a mais próxima; Raleway é pontuda demais.</p></div>
+    <div class="plano reveal" style="--i:2"><h2 style="font-size:1.3rem">Assinatura: Montserrat</h2><p style="font-size:var(--fs-small)">No logo, "Thiago" em negrito e "Benevides" em peso leve é uma sans geométrica no estilo Montserrat. Ela só é usada para a assinatura do nome, como no logo.</p></div>
+  </div>
+</div></section>
+
+<section class="section section--mist"><div class="container">
+  <div class="head"><span class="eyebrow">Fontes do conteúdo</span><h2>Tudo vem de <em>fontes reais</em></h2></div>
+  <div class="combinados">
+    <div class="plano reveal"><h2 style="font-size:1.3rem">Instagram</h2><ul class="check"><li>Bio, nome e identidade do perfil @nutrithiagobenevides</li><li>6 reels (vídeo e áudio originais) e suas legendas</li><li>Posts e carrosséis com os serviços, em 1080 px</li></ul></div>
+    <div class="plano reveal" style="--i:1"><h2 style="font-size:1.3rem">Linktree e Google</h2><ul class="check"><li>WhatsApp de agendamento e título "Biomédico e Nutricionista"</li><li>Endereço em Mococa, telefone e descrição do Google</li><li>Avaliações de Felipe Augusto e Kaynan Leite</li></ul></div>
+    <div class="plano reveal" style="--i:2"><h2 style="font-size:1.3rem">Pendente de confirmação</h2><ul class="check"><li>Quantidade exata de avaliações no Google</li><li>Horário de funcionamento</li><li>Endereço do atendimento em Ribeirão Preto</li><li>Fotos de resultados, que não são públicas no perfil</li></ul></div>
+  </div>
+</div></section>
+
+<section class="section section--dark"><div class="container cta-band">
+  <span class="eyebrow">Próximo passo</span>
+  <h2>Vamos colocar <em>no ar</em></h2>
+  <p class="lead" style="max-width:46ch">Aprovando a proposta, começamos pela compra do domínio e pela hospedagem.</p>
+  <a class="btn btn--gold btn--lg" href="/">Rever o site <span class="arrow">→</span></a>
+</div></section>
+</main>
+
+<footer class="footer" style="padding-block:32px"><div class="container footer__bottom" style="margin:0;border:0;padding-top:0"><span>Proposta de site · Thiago Benevides</span><span>Página interna, não indexada. Remover antes de publicar.</span></div></footer>
+
+<script src="/assets/js/motion.js" defer></script>
+</body>
+</html>

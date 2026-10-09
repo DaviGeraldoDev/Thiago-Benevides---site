@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design System · Thiago Benevides</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Montserrat:wght@300;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="components.css">
+<style>
+  .sg-sw { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .sg-sw div { background: var(--surface); } .sg-sw i { display: block; height: 78px; } .sg-sw b { display: block; padding: .6rem .8rem 0; font-size: .8rem; } .sg-sw span { display: block; padding: 0 .8rem .7rem; font-size: .72rem; color: var(--text-muted); }
+  .sg-row { display: flex; flex-wrap: wrap; gap: var(--sp-4); align-items: center; }
+  .sg-note { font-size: var(--fs-small); max-width: 70ch; margin-top: var(--sp-4); }
+  .sg-sec { padding-block: clamp(2.5rem, 8svh, 5rem); }
+  .nav__menu a { white-space: nowrap; }
+  @media (max-width: 1100px) { .nav__menu { display: none; } }
+</style>
+</head>
+<body>
+<header class="nav"><div class="nav__inner">
+  <a class="nav__logo" href="#top"><img src="../site/assets/img/logo-mark-gold-640.png" alt="" width="32" height="44"><span class="brand-word">Thiago<span>Benevides</span><small>Biomédico e Nutricionista</small></span></a>
+  <nav class="nav__menu"><a class="nav__link" href="#cores">Cores</a><a class="nav__link" href="#tipografia">Tipografia</a><a class="nav__link" href="#botoes">Botões</a><a class="nav__link" href="#componentes">Componentes</a></nav>
+  <a class="btn btn--gold btn--sm" href="#botoes">Agendar</a></div><div class="nav__progress"></div></header>
+
+<main id="top" style="padding-top:var(--nav-h)">
+<section class="section section--dark grid-lines"><div class="container split">
+  <div class="stack"><span class="eyebrow"><b>00</b>Design system v2</span><h1 class="display reveal--words">Seu objetivo é único. A estratégia <em>também precisa ser.</em></h1><p class="lead">Retângulos com moldura fina (como o selo do logo), botões retos (como nos posts), grade de linhas, numerais grandes em serifa, hero escuro.</p></div>
+  <div class="frame" style="width:min(100%,320px);justify-self:center"><div class="media"><img src="../site/assets/img/thiago-consultorio.jpg" alt=""></div></div>
+</div></section>
+
+<section class="section" id="cores"><div class="container">
+  <div class="head"><span class="eyebrow"><b>01</b>Cor</span><h2>Verde-floresta e <em>ouro</em>, sobre creme.</h2><p class="lead">Medida nos posts e no logo (verde #163626, ouro #DAB676, creme #F6EEEA). O verde-petróleo da parede só aparece nas fotos.</p></div>
+  <div class="sg-sw">
+    <div><i style="background:var(--tb-ivory)"></i><b>Ivory</b><span>#FBF8F3 · cards</span></div><div><i style="background:var(--tb-cream)"></i><b>Cream</b><span>#F6EFE8 · fundo</span></div><div><i style="background:var(--tb-mist)"></i><b>Mist</b><span>#E8ECE0 · alt.</span></div><div><i style="background:var(--tb-linen)"></i><b>Linen</b><span>#DDD5C8 · linhas</span></div>
+    <div><i style="background:var(--tb-forest)"></i><b>Forest ★</b><span>#163626 · primária</span></div><div><i style="background:var(--tb-forest-2)"></i><b>Forest 2</b><span>#2A463A · logo</span></div><div><i style="background:var(--tb-green)"></i><b>Green</b><span>#2D5E45 · itálico</span></div><div><i style="background:var(--tb-teal)"></i><b>Teal</b><span>#2E8275 · parede</span></div>
+    <div><i style="background:var(--tb-gold)"></i><b>Gold ★</b><span>#DAB676 · títulos</span></div><div><i style="background:var(--tb-gold-logo)"></i><b>Gold Logo</b><span>#C9A24D</span></div><div><i style="background:var(--tb-gold-soft)"></i><b>Gold Soft</b><span>#EBD9AE</span></div><div><i style="background:var(--tb-gold-deep)"></i><b>Gold Deep</b><span>#7A6626 · texto AA</span></div>
+  </div>
+</div></section>
+
+<section class="section section--ivory" id="tipografia"><div class="container">
+  <div class="head"><span class="eyebrow"><b>02</b>Tipografia</span><h2>Instrument Serif, <em>Quicksand</em> e a assinatura em Montserrat</h2></div>
+  <div class="split" style="align-items:start">
+    <div class="stack"><p class="display">Display <em>Aa</em></p><h1>Título H1 com <em>itálico</em></h1><h2>Título H2 de seção</h2><h3>Título H3 de célula</h3><span class="brand-word" style="font-size:1.6rem">Thiago<span>Benevides</span></span></div>
+    <div class="stack"><span class="eyebrow"><b>03</b>Rótulo numerado</span><p class="lead">Quicksand 500, linha 1.65, para textos corridos como os dos carrosséis do Instagram.</p><p>Instrument Serif tem serifa fechada, letras juntas e x-height alto, como os títulos dos posts. Quicksand é a sans arredondada do texto corrido. Montserrat só na assinatura do nome, como no logo (Thiago em negrito, Benevides em leve).</p><div class="stat">5,0</div></div>
+  </div>
+</div></section>
+
+<section class="section" id="botoes"><div class="container">
+  <div class="head"><span class="eyebrow"><b>04</b>Botões</span><h2>Retos, com <em>brilho</em> no hover</h2></div>
+  <div class="sg-row"><a class="btn" href="#">Primário <span class="arrow">→</span></a><a class="btn btn--outline" href="#">Contorno</a><a class="btn btn--gold" href="#">Ouro</a><a class="btn btn--whatsapp" href="#">WhatsApp</a><a class="btn btn--text" href="#">Link com filete</a></div>
+  <div class="sg-row" style="background:var(--tb-forest);padding:var(--sp-5);margin-top:var(--sp-5)"><a class="btn btn--gold" href="#">Ouro</a><a class="btn btn--light" href="#">Claro</a><a class="btn btn--text" href="#" style="--_fg:var(--tb-gold)">Link</a></div>
+</div></section>
+
+<section class="section section--mist" id="componentes"><div class="container">
+  <div class="head"><span class="eyebrow"><b>05</b>Componentes</span><h2>Células, linha do tempo e <em>acordeão</em></h2></div>
+  <div class="hair" style="grid-template-columns:repeat(3,1fr)" data-stagger>
+    <div class="cell cell--hover"><span class="num">01</span><h3>Célula com hover</h3><p>Fundo vira verde-floresta e o número desliza.</p></div>
+    <div class="cell cell--hover"><span class="num">02</span><h3>Grade de linhas</h3><p>Células separadas por 1px, no lugar de cards com sombra.</p></div>
+    <div class="cell cell--hover"><span class="num">03</span><h3>Numerais em serifa</h3><p>Referência aos números dos carrosséis.</p></div>
+  </div>
+  <div style="margin-top:var(--sp-7)"><ol class="timeline"><li><small>PASSO 01</small><h3>Conversa</h3><p>Rotina e histórico.</p></li><li><small>PASSO 02</small><h3>Avaliação</h3><p>Composição corporal.</p></li><li><small>PASSO 03</small><h3>Estratégia</h3><p>Plano individual.</p></li><li><small>PASSO 04</small><h3>Acompanhamento</h3><p>Ajustes contínuos.</p></li></ol></div>
+  <div class="split" style="margin-top:var(--sp-7);align-items:start">
+    <div class="acc"><details open><summary>Acordeão de dúvidas</summary><div class="ans">Resposta curta e direta, com filete dourado.</div></details><details><summary>Outra pergunta?</summary><div class="ans">Abre com o ícone girando.</div></details></div>
+    <div class="stack"><div class="sg-row"><span class="tag">Tag</span><span class="tag tag--outline">Contorno</span></div><span class="pill"><span class="stars">★★★★★</span> 5,0 no Google</span><div class="tabs"><button aria-selected="true">Vídeos</button><button aria-selected="false">Posts</button></div></div>
+  </div>
+</div></section>
+</main>
+
+<footer class="footer"><div class="container"><div class="footer__bottom" style="border:0;margin:0;padding:0"><span>Design System v2 · Thiago Benevides</span><span>Instrument Serif · Quicksand · Montserrat</span></div></div></footer>
+<script src="motion.js" defer></script>
+</body>
+</html>
